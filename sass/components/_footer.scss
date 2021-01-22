@@ -128,9 +128,10 @@
 
 @media screen and (min-width: 768px) {
   .address-inform {
-    // outline: 1px solid tomato;
+    outline: 1px solid tomato;
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
     margin-bottom: 60px;
   }
 
@@ -157,6 +158,7 @@
 @media screen and (min-width: 1200px) {
   .footer .container {
     display: flex;
+    align-items: baseline;
   }
 
   .footer-logo {
@@ -175,8 +177,8 @@
   .social-content {
     width: 206px;
     height: 80px;
-    margin-left: 69px;
-    margin-right: 109px;
+    margin-left: 70px;
+    margin-right: 93px;
   }
 
   .input-subscribe {

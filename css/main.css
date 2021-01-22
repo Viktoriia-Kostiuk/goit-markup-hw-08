@@ -63,6 +63,7 @@ img {
   padding: 0 15px;
   margin: 0 auto;
   text-align: center;
+  outline: 1px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
@@ -328,33 +329,6 @@ img {
   }
 }
 
-.hero {
-  padding-top: 118px;
-  padding-bottom: 118px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-mobile.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-mobile.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-mobile@2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-mobile@2x.jpg);
-  }
-}
-
-.hero-title {
-  margin: 0 auto;
-  width: 360px;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--other-color);
-}
-
 .hero-btn {
   display: block;
   margin-left: auto;
@@ -409,7 +383,24 @@ img {
           transform: translate(-50%, -50%) scale(0);
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-mobile@2x.jpg);
+  }
+}
+
 @media screen and (max-width: 767px) {
+  .hero-title {
+    margin: 0 auto;
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--other-color);
+  }
   .modal {
     width: 100%;
     max-width: 450px;
@@ -449,6 +440,16 @@ img {
   fill: var(--accent-color);
 }
 
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: #2f303a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-mobile.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -456,44 +457,54 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .is-hidden .hero {
+  .hero-title {
+    margin: 0 auto;
+    width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--other-color);
+  }
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-tablet.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-tablet.jpg);
   }
-  .is-hidden .modal {
+  .modal {
     width: 450px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .is-hidden .hero {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-tablet@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .is-hidden .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-desktop.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-desktop.jpg);
+  .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-desktop.jpg);
   }
-  .is-hidden .modal {
+  .modal {
     width: 528px;
   }
-  .is-hidden .hero-title {
-    width: 696px;
+  .hero-title {
+    min-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
-  .is-hidden .modal {
+  .modal {
     width: 528px;
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .is-hidden .hero {
+  .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero-desktop@2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-desktop@2x.jpg);
   }
@@ -1434,11 +1445,15 @@ img {
 
 @media screen and (min-width: 768px) {
   .address-inform {
+    outline: 1px solid tomato;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-bottom: 60px;
   }
   .social-content {
@@ -1465,6 +1480,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer-logo {
     font-size: 26px;
@@ -1479,8 +1497,8 @@ img {
   .social-content {
     width: 206px;
     height: 80px;
-    margin-left: 69px;
-    margin-right: 109px;
+    margin-left: 70px;
+    margin-right: 93px;
   }
   .input-subscribe {
     width: 358px;
