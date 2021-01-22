@@ -63,7 +63,6 @@ img {
   padding: 0 15px;
   margin: 0 auto;
   text-align: center;
-  outline: 1px solid tomato;
 }
 
 @media screen and (min-width: 480px) {
@@ -1445,7 +1444,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .address-inform {
-    outline: 1px solid tomato;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
