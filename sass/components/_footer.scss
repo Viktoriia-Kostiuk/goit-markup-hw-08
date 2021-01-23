@@ -175,6 +175,7 @@
   }
 
   .social-content {
+    text-align: left;
     width: 206px;
     height: 80px;
     margin-left: 70px;
@@ -194,5 +195,11 @@
   }
   .address-inform {
     margin-bottom: 0;
+  }
+  .address-container {
+    text-align: left;
+  }
+  .footer-form {
+    text-align: left;
   }
 }
